@@ -10,13 +10,14 @@
     $method       = 'POST'; //method
     
     //Request Body//
-    $body['product']    = array('headset', 'softcase');
-    $body['qty']        = array('1', '3');
-    $body['price']      = array('100000', '20000');
-    $body['returnUrl']  = 'https://your-website.com/thank-you-page';
-    $body['cancelUrl']  = 'https://your-website.com/cancel-page';
-    $body['notifyUrl']  = 'https://your-website.com/callback-url';
-    $body['referenceId'] = '1234'; //your reference id
+    $body['name']       = 'Nama Buyer';
+    $body['phone']      = '08111511299';  //Pastikan data phone terdiri dari 5 sampai 15 digit angka
+    $body['email']      = "buyer@mail.com"; 
+    $body['amount']     = 'https://meeqostore.com//thank-you-page';
+    $body['notifyUrl']  = 'https://meeqostore.com/cancel-page';
+    $body['expired']    = 24;
+    $body['paymentMethod'] = 'va'; //your reference id;
+    $body['paymentChannel'] = 'bca';
     //End Request Body//
 
     //Generate Signature
